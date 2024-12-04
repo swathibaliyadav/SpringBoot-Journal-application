@@ -1,0 +1,11 @@
+#cmd command
+net start mongoDB
+net stop mongoDB
+
+#mongosh cmd to start mongodb at localhost
+mongosh
+show dbs
+use journalDB
+show collections
+db.journal_entries.find()
+db.journal_entries.deleteMany({})
